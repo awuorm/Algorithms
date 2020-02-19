@@ -16,10 +16,8 @@ def recipe_batches(recipe, ingredients):
           quantities.append(batches)
       print(quantities)
       if 0 in quantities:
-        print(0)
         return 0
       else:
-        print(min(quantities))
         return min(quantities)
   else:
       return 0
