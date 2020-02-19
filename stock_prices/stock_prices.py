@@ -8,10 +8,8 @@ def find_max_profit(prices):
     lhs = prices[:i]
     if len(lhs) > 1:
       profit = prices[i] - min(lhs)
-      print(lhs, prices[i])
       max_profit.append(profit)
   found_profit = max(max_profit)
-  print(found_profit,max_profit)
   return found_profit
 find_max_profit([10, 7, 5, 8, 11, 9])
 
