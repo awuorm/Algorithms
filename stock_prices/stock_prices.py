@@ -6,6 +6,7 @@ def find_max_profit(prices):
   max_profit = []
   for i in range(len(prices)-1):
     lhs = prices[:i]
+    print(lhs)
     if len(lhs) > 1:
       profit = prices[i] - min(lhs)
       max_profit.append(profit)
