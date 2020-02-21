@@ -3,7 +3,18 @@
 import sys
 
 def rock_paper_scissors(n):
-  pass 
+  rps = ['rock','paper','scissors']
+  plays = []
+  def rock_paper_scissors_helper(options,n):
+    if n == 0:
+      plays.append(options)
+    else:
+      for item in rps:
+        rock_paper_scissors_helper(options + [item], n - 1 )
+  rock_paper_scissors_helper([],n)
+  print(plays)
+  return plays
+rock_paper_scissors(2) 
 
 
 if __name__ == "__main__":
